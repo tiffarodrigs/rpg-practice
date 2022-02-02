@@ -47,11 +47,14 @@ export default class Battle{
     this.ch1xp += 3;
     return this.ch1xp;
   }
+  
   levelUp(){
-    if()
+    let level=0;
+    if(this.ch1xp >= 6)
     {
       level++
     }
+    return level;
 
   }
 
