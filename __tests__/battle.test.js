@@ -34,4 +34,9 @@ describe('Battle', () =>{
     expect(battle.ch1health).toEqual(8);
   });
 
+  test('Should return player2 as winner', () => {
+    let winnerBattle = new Battle("wizard",0,"orc",10);
+    expect(winnerBattle.winner()).toEqual("character 2 wins!")
+  })
+
 });

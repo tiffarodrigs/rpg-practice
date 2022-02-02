@@ -20,9 +20,20 @@ export default class Battle{
     this.ch1health -= 1;
     return this.ch1health;
   }
+
   shoot(){
     this.ch1health -= 2;
     return this.ch1health;
+  }
+
+  winner(){
+    if(this.ch1health === 0)
+    {
+     return "character 2 wins!";
+    }
+    else if(this.ch2health === 0){
+      return "character 1 wins!";
+    }
   }
 
 }
