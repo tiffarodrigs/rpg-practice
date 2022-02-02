@@ -11,6 +11,4 @@ describe('Character', () =>{
     expect(character.health).toEqual(10);
   });
 
-
-
 });

@@ -1,5 +1,7 @@
+import Battle from "./battle";
+
 export default class Character{
-  constructor(name,xp, level,strength,health){
+  constructor(name, xp, level, strength, health){
     this.name=name;
     this.xp = xp;
     this.level=level;
@@ -7,6 +9,5 @@ export default class Character{
     this.health=health;
     //mana;
   }
-
   
 }

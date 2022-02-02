@@ -1,16 +1,15 @@
 import Battle from './../src/js/battle.js'
+import Character from './../src/js/character.js'
 
 describe('Battle', () =>{
 
   let battle
   beforeEach(() => {
-    battle = new Battle("wizard",0, 10,"orc",0, 10);
+    battle = new Battle("wizard", 0, 10, "orc", 0, 10);
   });
 
   test('Should create a battle object',() => {
-    expect(battle.character1).toEqual("wizard");
     expect(battle.ch1health).toEqual(10);
-    expect(battle.character2).toEqual("orc");
     expect(battle.ch2health).toEqual(10);
   });
 
@@ -42,6 +41,11 @@ describe('Battle', () =>{
   test('Should add 3 xp to character1', () => {
     expect(battle.addXP()).toEqual(3);
     expect(battle.ch1xp).toEqual(3);
+  });
+
+  test('Should return the level of the player', () => {
+    expect(battle.levelUp()).toEqual(0);
+   
   });
 
 });

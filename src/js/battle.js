@@ -8,6 +8,8 @@ export default class Battle{
     this.ch2health = ch2health;
   }
 
+
+
   thunderbolt() {
     this.ch2health -= 1;
     return this.ch2health;
@@ -27,6 +29,7 @@ export default class Battle{
   shoot(){
     this.ch1health -= 2;
     return this.ch1health;
+    
   }
 
   winner() {
@@ -43,6 +46,13 @@ export default class Battle{
   addXP() {
     this.ch1xp += 3;
     return this.ch1xp;
+  }
+  levelUp(){
+    if()
+    {
+      level++
+    }
+
   }
 
 }
