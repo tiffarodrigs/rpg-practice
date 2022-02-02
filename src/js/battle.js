@@ -7,6 +7,7 @@ export default class Battle{
     this.ch2xp = ch2xp;
     this.ch2health = ch2health;
   }
+
   thunderbolt() {
     this.ch2health -= 1;
     return this.ch2health;
@@ -31,16 +32,17 @@ export default class Battle{
   winner() {
     if(this.ch1health === 0)
     {
-      
      return "character 2 wins!";
     }
     else if(this.ch2health === 0){
+      addXP();
       return "character 1 wins!";
     }
   }
 
   addXP() {
-
+    this.ch1xp += 3;
+    return this.ch1xp;
   }
 
 }

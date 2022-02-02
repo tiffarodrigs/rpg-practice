@@ -41,7 +41,7 @@ describe('Battle', () =>{
 
   test('Should add 3 xp to character1', () => {
     expect(battle.addXP()).toEqual(3);
-    expect(battle.ch2xp).toEqual(3);
+    expect(battle.ch1xp).toEqual(3);
   });
 
 });
