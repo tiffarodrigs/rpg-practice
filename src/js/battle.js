@@ -1,10 +1,10 @@
 export default class Battle{
-  constructor(character1, ch1xp, ch1health, character2, ch2xp, ch2health) {
+  constructor(character1, ch1xp, ch1level, ch1health, character2, ch2health) {
     this.character1 = character1;
     this.ch1xp = ch1xp;
+    this.ch1level = ch1level;
     this.ch1health = ch1health;
     this.character2 = character2;
-    this.ch2xp = ch2xp;
     this.ch2health = ch2health;
   }
 
@@ -49,13 +49,12 @@ export default class Battle{
   }
   
   levelUp(){
-    let level=0;
     if(this.ch1xp >= 6)
     {
-      level++
+      this.ch1level++;
+      this.ch1xp - 6;
     }
-    return level;
-
+    return this.ch1level;
   }
 
 }

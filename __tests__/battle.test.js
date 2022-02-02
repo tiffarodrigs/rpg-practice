@@ -5,7 +5,7 @@ describe('Battle', () =>{
 
   let battle
   beforeEach(() => {
-    battle = new Battle("wizard", 0, 10, "orc", 0, 10);
+    battle = new Battle("wizard", 0, 1, 10, "orc", 10);
   });
 
   test('Should create a battle object',() => {
@@ -34,7 +34,7 @@ describe('Battle', () =>{
   });
 
   test('Should return player2 as winner', () => {
-    let winnerBattle = new Battle("wizard",0, 0,"orc",10);
+    let winnerBattle = new Battle("wizard", 0, 1, 0, "orc", 10);
     expect(winnerBattle.winner()).toEqual("character 2 wins!")
   });
 
@@ -44,7 +44,7 @@ describe('Battle', () =>{
   });
 
   test('Should return the level of the player', () => {
-    expect(battle.levelUp()).toEqual(0);
+    expect(battle.levelUp()).toEqual(1);
    
   });
 
