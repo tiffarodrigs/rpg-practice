@@ -12,9 +12,15 @@ describe('Battle', () =>{
 
   test('Should create thunderbolt attack',() => {
     const battle = new Battle("wizard",10,"orc",10);
-    expect(battle.thunderbolt()).toEqual(8);
-    expect(battle.ch2health).toEqual(8);
+    expect(battle.thunderbolt()).toEqual(9);
+    expect(battle.ch2health).toEqual(9);
   });
 
+  test('Should create sword attack',() => {
+    const battle = new Battle("wizard",10,"orc",10);
+    expect(battle.sword()).toEqual(8);
+    expect(battle.ch2health).toEqual(8);
+  });
+  
 
 });
