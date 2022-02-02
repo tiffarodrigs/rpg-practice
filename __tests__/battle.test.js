@@ -29,4 +29,9 @@ describe('Battle', () =>{
     expect(battle.ch1health).toEqual(9);
   });
 
+  test('Should create shoot attack', () => {
+    expect(battle.shoot()).toEqual(8);
+    expect(battle.ch1health).toEqual(8);
+  });
+
 });

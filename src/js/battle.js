@@ -20,5 +20,9 @@ export default class Battle{
     this.ch1health -= 1;
     return this.ch1health;
   }
+  shoot(){
+    // this.ch1health -= 2;
+    // return this.ch1health;
+  }
 
 }
