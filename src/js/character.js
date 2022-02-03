@@ -9,5 +9,7 @@ export default class Character{
     this.health=health;
     //mana;
   }
+
+  //add inventory method
   
 }
