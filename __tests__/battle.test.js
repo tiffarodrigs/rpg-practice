@@ -45,7 +45,13 @@ describe('Battle', () =>{
 
   test('Should return the level of the player', () => {
     expect(battle.levelUp()).toEqual(1);
-   
   });
+
+  test('Should return level-2 when player 1 xp is 6 or more', () => {
+    let playerLevel = new Battle("wizard", 6, 1, 0, "orc", 10);
+    //constructor(character1, ch1xp, ch1level, ch1health, character2, ch2health) {
+    expect(playerLevel.levelUp()).toEqual(2);
+  });
+  
 
 });
