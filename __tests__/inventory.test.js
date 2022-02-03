@@ -15,3 +15,5 @@ describe('Inventory', () =>{
     expect(inventory.item3).toEqual("armor3");
   });
 });
+ 
+ 
