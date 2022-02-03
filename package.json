@@ -1,19 +1,13 @@
 {
-  "name": "rpg",
+  "name": "rpg-practice",
   "version": "1.0.0",
-  "description": "an rpg game",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode development",
-    "start": "npm run build & webpack-dev-server --open --mode development",
+    "build": "webpack --mode=development",
+    "start": "npm run build; webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "coverageReporters": [
-      "html"
-    ]
   },
   "keywords": [],
   "author": "",
@@ -30,11 +24,11 @@
     "style-loader": "^1.0.0",
     "webpack": "4.39.3",
     "webpack-cli": "^3.3.8",
-    "webpack-dev-server": "3.8.0"
+    "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3",
-    "jquery": "^3.6.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
 }

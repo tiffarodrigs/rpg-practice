@@ -9,13 +9,13 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'eval-source-map',
-  devServer: {
-    contentBase: './dist'
+  devServer: {               
+    contentBase: './dist'    
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'rpg-practice',
       template: './src/index.html',
       inject: 'body'
     })
