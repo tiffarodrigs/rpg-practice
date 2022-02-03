@@ -1,6 +1,6 @@
 import Character from './../src/js/character.js'
 
-describe('Character', () =>{
+describe('Character', () => {
 
   test('Should create a character object',() =>{
     const character = new Character("wizard",0 ,2 ,"magic", 10, []);
@@ -15,6 +15,13 @@ describe('Character', () =>{
     const character = new Character("wizard",0 ,2 ,"magic", 10, []);
     character.addItemToInventory(["health potion", 3])
     expect(character.inventory).toEqual([["health potion", 3]]);
+  });
+
+  test('Should call Health Potion and up character health by 3', () => {
+    const character = new Character("wizard",0 ,2 ,"magic", 10, []);
+    //character.healthPotion();
+    expect(character.healthPotion()).toEqual(13);
+    expect(character.health).toEqual(13);
   });
 
 });
